@@ -1,0 +1,94 @@
+:root {
+    --lighter-grey: #efefef;
+    --light-grey: #ddd;
+    --medium-grey: #888;
+    --dark-grey: #333;
+    --blue: #1a73e8;
+}
+
+body {
+    color: var(--dark-grey);
+    font-family: "Open Sans", arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header *:not(:first-child) {
+    margin-left: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table:not(:empty) {
+    margin-bottom: 30px;
+}
+
+table.loaded ~ span {
+    display: none;
+}
+
+tfoot tr {
+    background-color: var(--lighter-grey);
+}
+
+td, th {
+    border: 1px solid var(--light-grey);
+    text-align: left;
+    padding: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+input,
+button {
+    border-radius: 3px;
+    border: 1px solid var(--dark-grey);
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+input[type=date] {
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+}
+
+button {
+    background-color: transparent;
+    border-color: var(--blue);
+    box-shadow: none;
+    color: var(--blue);
+    transition: .3s ease-in-out;
+}
+
+button:hover,
+button:active {
+    background-color: var(--blue);
+    color: white;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+tag {
+    background-color: var(--lighter-grey);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.fill-space {
+    flex-grow: 1;
+}
